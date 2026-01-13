@@ -65,3 +65,10 @@ nav{
 .banner-img{
     max-width: 100%;
 }
+/* responsive design */
+@media screen and (max-width:576px) {
+    nav, .nav-menu ul {
+        flex-direction: column;
+    }
+    
+}
