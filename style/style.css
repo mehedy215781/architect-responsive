@@ -74,6 +74,7 @@ main{
 .teams{
     display: flex;
     align-items: center;
+    margin-bottom: 8.125rem;
 }
 .team-img{
     display: grid;
@@ -105,6 +106,61 @@ main{
     line-height: 26px;
     color: #727272;
 }
+/* feature section style */
+.feature-section{
+    display: flex;
+    gap: 7.2rem;
+}
+.feature-title{
+   font-size: 2.7rem;
+    font-weight: 600;
+    color: #131313;
+    border-left:5px solid #FF900E;
+    padding-left: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feature-text{
+   font-size:1rem;
+   line-height: 1.4rem;
+   color: #727272;
+}
+.feauture-card{
+    max-width: 585px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+.card-title{
+    font-size: 1.2rem;
+    color: #131313;
+}
+.card-text{
+    font-size: 1rem;
+    color: 727272;
+    line-height: 1.3rem;
+}
+.feature-btn{
+    max-width: 340px;
+    padding: 2.875rem 2.6875rem;;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    margin-left: -60px;
+    margin-top: -90px;
+}
+.feature-img{
+    width: 100%;
+}
+.btn-text{
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+.btn-2{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
 /* responsive design */
 @media screen and (max-width:576px) {
     nav, .nav-menu ul, .teams{
@@ -113,11 +169,18 @@ main{
     .team-img{
         grid-template-columns: repeat(1,1fr);
     }
+    .feature-section{
+        flex-direction: column;
+    }
+    .feature-btn{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 /* medium respomdive */
 @media screen and (min-width:576px) and (max-width:992px){
     
-         .teams{
+         .teams , .feature-section{
             flex-direction: column;
          }
     
