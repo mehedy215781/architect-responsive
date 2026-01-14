@@ -199,8 +199,42 @@ main{
     color: #727272;
     margin-bottom: -.7rem;
 }
-
-
+/* sponser-style */
+.sponser{
+    text-align: center;
+    margin-top: 9.1rem;
+}
+.sponser h2{
+    font-size: 2.8rem;
+    color: #131313;
+}
+.sponser p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #727272;
+    margin-top:-1.3rem;
+}
+.sponser-img{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 5rem;
+    gap: 11.25rem;
+    filter: grayscale(100%);
+    align-items: center;
+    margin-bottom: 8rem;
+}
+/* footer-style */
+#foter-section{
+    max-width: 1440px;
+    background: #FFF4E7;
+    text-align: center;
+    padding: 1rem 10rem;
+    border-radius: 10px;
+}
+#foter-section p{
+    font-size: 1rem;
+    color: #424242;
+}
 /* responsive design */
 @media screen and (max-width:576px) {
     nav, .nav-menu ul, .teams{
@@ -219,6 +253,10 @@ main{
      .card-section{
         grid-template-columns: repeat(1,1fr);
      }
+     .sponser-img{
+        grid-template-columns: repeat(1,1fr);
+        
+     }
 }
 /* medium respomdive */
 @media screen and (min-width:576px) and (max-width:992px){
@@ -229,4 +267,6 @@ main{
     .card-section{
         grid-template-columns: repeat(2,1fr);
      }
+      .sponser-img{
+        grid-template-columns: repeat(2,1fr);
     }
